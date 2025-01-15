@@ -1,30 +1,155 @@
 .news-feed-main {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 08px 6px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
-  border: 0.5px solid #ccc;
-}
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 08px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    border: 0.5px solid #ccc;
+  }
+  
+  .news-feed-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  
+  .news-container {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .news-container p {
+    margin: 0;
+  }
+  
 
-.news-feed-heading {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #0056b3;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-}
-
-.news-container {
-  font-size: 1em;
-  line-height: 1.6;
-  color: #666;
-  border-top: 2px solid #ccc;
-  padding-top: 10px;
-}
-
-.news-container p {
-  margin: 0;
-}
+  .personalize-container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    border: 0.5px solid #ccc;
+    color: #0056b3;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .personalize-container label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0056b3;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .personalize-select,
+  .date-input,
+  .search-input {
+    font-size: 1em;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .personalize-select:focus,
+  .date-input:focus,
+  .search-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 4px rgba(52, 152, 219, 0.5);
+    outline: none;
+  }
+  
+  .personalize-select:hover,
+  .date-input:hover,
+  .search-input:hover {
+    border-color: #0056b3;
+  }
+  
+  .personalize-select option {
+    padding: 8px;
+  }
+  
+  .date-input {
+    appearance: none; /* Removes native date picker styles */
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .search-input {
+    max-width:600px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #3498db;
+    box-shadow: 0px 4px 6px rgba(52, 152, 219, 0.3);
+  }
+  
+  .search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .search-input:hover {
+    border-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .personalize-container {
+      padding: 15px;
+      font-size: 0.9em;
+    }
+  
+    .personalize-select,
+    .date-input,
+    .search-input {
+      font-size: 0.9em;
+      padding: 8px;
+    }
+  
+    label {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .personalize-container {
+      padding: 10px;
+    }
+  
+    .personalize-select,
+    .date-input,
+    .search-input {
+      font-size: 0.85em;
+      padding: 6px;
+    }
+  
+    label {
+      font-size: 0.9em;
+    }
+  }
+  

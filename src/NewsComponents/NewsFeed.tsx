@@ -3,10 +3,18 @@ import "./newsStyles.css";
 
 //f5e45be0f1a348bba560f4ae6d8fa933
 
-export default function NewsFeed() {
+export default function NewsFeed({ newsData }) {
   return (
-    <div className="news-feed-main">
-      <div className="news-feed-heading">
+    <div>
+      {newsData.map((article: { title: any; description: any }, index: any) => (
+        <div key={index} className="news-feed-main">
+          <div className="news-feed-heading">{article.title}</div>
+          <div className="news-container">
+            <p>{article.description}</p>
+          </div>
+        </div>
+      ))}
+      {/* <div className="news-feed-heading">
         Jamie Dimon says Bitcoin has 'no intrinsic value'
       </div>
       <div className="news-container">
@@ -17,7 +25,7 @@ export default function NewsFeed() {
           rate cuts and hopes of a more supportive regulatory environment under
           the incoming Trump administration.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }
